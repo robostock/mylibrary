@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="MyLibraryDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MyLibraryDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.mylibrary.Properties.Settings.GlobalReference.Default.MyLibraryDBConnectionString" Provider="Microsoft.SqlServerCe.Client.3.5" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="mylib4TableAdapter" GeneratorDataComponentClassName="mylib4TableAdapter" Name="mylib4" UserDataComponentName="mylib4TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MyLibraryDBConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        mylib.id, pubkeys.filename, pubkeys.date, seckeys.filename AS Expr1, seckeys.date AS Expr2, mylib.serviecename, mylib.username, mylib.pswrd, mylib.ipadr, 
+                         mylib.uid, mylib.comment, mylib.pubid, mylib.secid
+FROM            mylib INNER JOIN
+                         pubkeys ON mylib.pubid = pubkeys.pubid INNER JOIN
+                         seckeys ON mylib.secid = seckeys.secid</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+              <Mapping SourceColumn="filename" DataSetColumn="filename" />
+              <Mapping SourceColumn="date" DataSetColumn="date" />
+              <Mapping SourceColumn="Expr1" DataSetColumn="Expr1" />
+              <Mapping SourceColumn="Expr2" DataSetColumn="Expr2" />
+              <Mapping SourceColumn="serviecenameb" DataSetColumn="serviecenameb" />
+              <Mapping SourceColumn="usernameb" DataSetColumn="usernameb" />
+              <Mapping SourceColumn="pswrdb" DataSetColumn="pswrdb" />
+              <Mapping SourceColumn="ipadrb" DataSetColumn="ipadrb" />
+              <Mapping SourceColumn="uidb" DataSetColumn="uidb" />
+              <Mapping SourceColumn="commentb" DataSetColumn="commentb" />
+              <Mapping SourceColumn="pubid" DataSetColumn="pubid" />
+              <Mapping SourceColumn="secid" DataSetColumn="secid" />
+              <Mapping SourceColumn="serviecename" DataSetColumn="serviecename" />
+              <Mapping SourceColumn="username" DataSetColumn="username" />
+              <Mapping SourceColumn="pswrd" DataSetColumn="pswrd" />
+              <Mapping SourceColumn="ipadr" DataSetColumn="ipadr" />
+              <Mapping SourceColumn="uid" DataSetColumn="uid" />
+              <Mapping SourceColumn="comment" DataSetColumn="comment" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="mylib4" msprop:Generator_TableClassName="mylib4DataTable" msprop:Generator_TableVarName="tablemylib4" msprop:Generator_RowChangedName="mylib4RowChanged" msprop:Generator_TablePropName="mylib4" msprop:Generator_RowDeletingName="mylib4RowDeleting" msprop:Generator_RowChangingName="mylib4RowChanging" msprop:Generator_RowEvHandlerName="mylib4RowChangeEventHandler" msprop:Generator_RowDeletedName="mylib4RowDeleted" msprop:Generator_RowClassName="mylib4Row" msprop:Generator_UserTableName="mylib4" msprop:Generator_RowEvArgName="mylib4RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" minOccurs="0" />
+              <xs:element name="filename" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnfilename" msprop:Generator_ColumnPropNameInRow="filename" msprop:Generator_ColumnPropNameInTable="filenameColumn" msprop:Generator_UserColumnName="filename" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="date" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columndate" msprop:Generator_ColumnPropNameInRow="date" msprop:Generator_ColumnPropNameInTable="dateColumn" msprop:Generator_UserColumnName="date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Expr1" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExpr1" msprop:Generator_ColumnPropNameInRow="Expr1" msprop:Generator_ColumnPropNameInTable="Expr1Column" msprop:Generator_UserColumnName="Expr1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Expr2" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExpr2" msprop:Generator_ColumnPropNameInRow="Expr2" msprop:Generator_ColumnPropNameInTable="Expr2Column" msprop:Generator_UserColumnName="Expr2" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="serviecenameb" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnserviecenameb" msprop:Generator_ColumnPropNameInRow="serviecenameb" msprop:Generator_ColumnPropNameInTable="serviecenamebColumn" msprop:Generator_UserColumnName="serviecenameb" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="usernameb" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnusernameb" msprop:Generator_ColumnPropNameInRow="usernameb" msprop:Generator_ColumnPropNameInTable="usernamebColumn" msprop:Generator_UserColumnName="usernameb" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="pswrdb" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnpswrdb" msprop:Generator_ColumnPropNameInRow="pswrdb" msprop:Generator_ColumnPropNameInTable="pswrdbColumn" msprop:Generator_UserColumnName="pswrdb" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="ipadrb" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnipadrb" msprop:Generator_ColumnPropNameInRow="ipadrb" msprop:Generator_ColumnPropNameInTable="ipadrbColumn" msprop:Generator_UserColumnName="ipadrb" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="uidb" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnuidb" msprop:Generator_ColumnPropNameInRow="uidb" msprop:Generator_ColumnPropNameInTable="uidbColumn" msprop:Generator_UserColumnName="uidb" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="commentb" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columncommentb" msprop:Generator_ColumnPropNameInRow="commentb" msprop:Generator_ColumnPropNameInTable="commentbColumn" msprop:Generator_UserColumnName="commentb" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="pubid" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnpubid" msprop:Generator_ColumnPropNameInRow="pubid" msprop:Generator_ColumnPropNameInTable="pubidColumn" msprop:Generator_UserColumnName="pubid" type="xs:int" minOccurs="0" />
+              <xs:element name="secid" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnsecid" msprop:Generator_ColumnPropNameInRow="secid" msprop:Generator_ColumnPropNameInTable="secidColumn" msprop:Generator_UserColumnName="secid" type="xs:int" minOccurs="0" />
+              <xs:element name="serviecename" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnserviecename" msprop:Generator_ColumnPropNameInRow="serviecename" msprop:Generator_ColumnPropNameInTable="serviecenameColumn" msprop:Generator_UserColumnName="serviecename" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="username" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnusername" msprop:Generator_ColumnPropNameInRow="username" msprop:Generator_ColumnPropNameInTable="usernameColumn" msprop:Generator_UserColumnName="username" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="pswrd" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnpswrd" msprop:Generator_ColumnPropNameInRow="pswrd" msprop:Generator_ColumnPropNameInTable="pswrdColumn" msprop:Generator_UserColumnName="pswrd" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="ipadr" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnipadr" msprop:Generator_ColumnPropNameInRow="ipadr" msprop:Generator_ColumnPropNameInTable="ipadrColumn" msprop:Generator_UserColumnName="ipadr" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="uid" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnuid" msprop:Generator_ColumnPropNameInRow="uid" msprop:Generator_ColumnPropNameInTable="uidColumn" msprop:Generator_UserColumnName="uid" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="comment" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columncomment" msprop:Generator_ColumnPropNameInRow="comment" msprop:Generator_ColumnPropNameInTable="commentColumn" msprop:Generator_UserColumnName="comment" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:mylib4" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,9 @@
+D:\Projects\CS\mylibrary\mylibrary\bin\Debug\mylibrary.exe.config
+D:\Projects\CS\mylibrary\mylibrary\bin\Debug\mylibrary.exe
+D:\Projects\CS\mylibrary\mylibrary\bin\Debug\mylibrary.pdb
+D:\Projects\CS\mylibrary\mylibrary\obj\x86\Debug\mylibrary.Form1.resources
+D:\Projects\CS\mylibrary\mylibrary\obj\x86\Debug\mylibrary.Properties.Resources.resources
+D:\Projects\CS\mylibrary\mylibrary\obj\x86\Debug\mylibrary.csproj.GenerateResource.Cache
+D:\Projects\CS\mylibrary\mylibrary\obj\x86\Debug\mylibrary.exe
+D:\Projects\CS\mylibrary\mylibrary\obj\x86\Debug\mylibrary.pdb
+D:\Projects\CS\mylibrary\mylibrary\obj\x86\Debug\mylibrary.csprojResolveAssemblyReference.cache
